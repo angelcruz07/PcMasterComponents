@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,200;1,300&family=Quicksand:wght@400;500;600;700&family=Raleway:ital,wght@0,400;0,600;1,200&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+
+    <title>Pc Master Components</title>
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="slogan">
+            <h1 class="title-slogan">"Arma el PC de tus sueños"</h1>
+        </div>
+        <img src="./assets/logo.png" alt="">
+        <nav class="navbar">
+
+            <ul>
+                <a href="#" class="item__nav-bar">Home</a>
+                <a href="#articles" class="item__nav-bar">Productos</a>
+                <a href="#cart" class="item__nav-bar"><i class="fa-solid fa-cart-shopping" style="color: #fff;"></i></a>
+            </ul>
+
+        </nav>
+    </header>
+    <main>
+
+
+        <section class="articles" id="articles">
+            <h2 class="title-ins">Arrastra un articulo hacia el carrito</h2>
+
+            <div class="container__articles">
+
+                <h2 class="title-article">Procesadores</h2>
+
+                <div class="article-container">
+
+                    <div class="article-item" draggable="true" data-price="10000">
+                        <img src="./assets/Intel Core i9-11900K.jpg" alt="Imagen de procesadores" class="article-img">
+                        <p class="description__article">Intel Core i9-11900K</p>
+                        <p class="precio">$ <span id="precioProducto">10,000</span> </P>
+                        <a href="#" class="btn-cart" data-price="10000"><i class="fa-solid fa-cart-shopping"
+                                style="color: #fff;"></i> Agregar</a>
+                    </div>
+
+
+                    <div class="article-item" draggable="true">
+                        <img src="./assets/AMD Ryzen 9 5950X.jpg" alt="Imagen de procesadores" class="article-img" data-price="19000">
+                        <p class="description__article">AMD Ryzen 9 5950X</p>
+                        <p class="precio">$ <span id="precioProducto">19,000</span></p>
+                        <a href="#" class="btn-cart" data-price="19000"><i class="fa-solid fa-cart-shopping"
+                                style="color: #fff;"></i> Agregar</a>
+                    </div>
+
+                    <div class="article-item" draggable="true">
+                        <img src="./assets/Intel Core i7-12700K.jpg" alt="Imagen de procesadores" class="article-img">
+                        <p class="description__article">Intel Core i7-12700K</p>
+                        <p class="precio">$5,000</p>
+                        <a href="#" class="btn-cart" data-price="5000"><i class="fa-solid fa-cart-shopping"
+                                style="color: #fff;"></i> Agregar</a>
+                    </div>
+
+                </div>
+
+                <h2 class="title-article">Graficas</h2>
+
+                <div class="article-container">
+                    <div class="article-item">
+                        <img src="./assets/AMD Radeon RX 6900 XT.png" alt="Imagen de graficas" class="article-img">
+                        <p class="description__article">AMD Radeon RX 6900 XT</p>
+                        <p class="precio">$15,000</p>
+                        <a href="#" class="btn-cart" data-price="15000"><i class="fa-solid fa-cart-shopping"
+                                style="color: #fff;"></i> Agregar</a>
+                    </div>
+                    <div class="article-item">
+                        <img src="./assets/NVIDIA GeForce RTX 3080.png" alt="Imagen de graficas" class="article-img">
+                        <p class="description__article">NVIDIA GeForce RTX 3080</p>
+                        <p class="precio">$2,000</p>
+                        <a href="#" class="btn-cart" data-price="2000"><i class="fa-solid fa-cart-shopping"
+                                style="color: #fff;"></i> Agregar</a>
+                    </div>
+                    <div class="article-item">
+                        <img src="./assets/NVIDIA GeForce RTX 3080.png" alt="Imagen de graficas" class="article-img">
+                        <p class="description__article">NVIDIA GeForce RTX 2060</p>
+                        <p class="precio">$2,000</p>
+                        <a href="#" class="btn-cart" data-price="2000"><i class="fa-solid fa-cart-shopping"
+                                style="color: #fff;"></i> Agregar</a>
+                    </div>
+                </div>
+
+                <h2 class="title-article">RAM</h2>
+                <div class="article-container">
+                    <div class="article-item">
+                        <img src="./assets/Skill Trident Z RGB DDR4 3600MHz (2x8GB).png" alt="Imagenes de RAM"
+                            class="article-img">
+                        <p class="description__article">Skill Trident Z RGB DDR4 8GB</p>
+                        <p class="precio">$120</p>
+                        <a href="#" class="btn-cart" data-price="120"><i class="fa-solid fa-cart-shopping"
+                                style="color: #fff;"></i> Agregar</a>
+                    </div>
+                    <div class="article-item">
+                        <img src="./assets/Kingston FURY DDR4, 3600MHz, 16GB (2 x 8GB).png" alt="Imagenes de RAM"
+                            class="article-img">
+                        <p class="description__article">Kingston FURY DDR4, 16GB</p>
+                        <p class="precio">$200</p>
+                        <a href="#" class="btn-cart" data-price="200"><i class="fa-solid fa-cart-shopping"
+                                style="color: #fff;"></i> Agregar</a>
+                    </div>
+                    <div class="article-item">
+                        <img src="./assets/Corsair Vengeance LPX DDR4 3200MHz (2x8GB).png" alt="Imagenes de RAM"
+                            class="article-img">
+                        <p class="description__article">Corsair LPX DDR4 3200MHz</p>
+                        <p class="precio">$100</p>
+                        <a href="#" class="btn-cart" data-price="100"><i class="fa-solid fa-cart-shopping"
+                                style="color: #fff;"></i> Agregar</a>
+                    </div>
+                </div>
+
+                <h2 class="title-article">Targeta madre</h2>
+
+                <div class="article-container">
+
+                    <div class="article-item">
+                        <img src="./assets/ASUS ROG Strix Z590-E Gaming.png" alt="Imagenes de targeta madre"
+                            class="article-img">
+                        <p class="description__article">ASUS ROG Strix Z590-E Gaming</p>
+                        <p class="precio">$10,000</p>
+                        <a href="#" class="btn-cart" data-price="10000"><i class="fa-solid fa-cart-shopping"
+                                style="color: #fff;"></i> Agregar</a>
+                    </div>
+                    <div class="article-item">
+                        <img src="./assets/Gigabyte X570 AORUS Ultra.png" alt="Imagenes de targeta madre"
+                            class="article-img">
+                        <p class="description__article">Gigabyte X570 AORUS Ultra</p>
+                        <p class="precio">12,900</p>
+                        <a href="#" class="btn-cart" data-price="12900"><i class="fa-solid fa-cart-shopping"
+                                style="color: #fff;"></i> Agregar</a>
+                    </div>
+                    <div class="article-item">
+                        <img src="./assets/MSI MPG B550 Gaming Edge WIFI.png" alt="Imagenes de targeta madre"
+                            class="article-img">
+                        <p class="description__article">MSI MPG B550 Gaming Edge WIFI</p>
+                        <p class="precio">$9,000</p>
+                        <a href="#" class="btn-cart" data-price="9000"><i class="fa-solid fa-cart-shopping"
+                                style="color: #fff;"></i> Agregar</a>
+                    </div>
+                </div>
+
+                <h2 class="title-article">Fuente de poder</h2>
+
+                <div class="article-container">
+                    <div class="article-item">
+                        <img src="./assets/EVGA SuperNOVA 850 G5, 850W, 80+ Gold.png" alt="Imagenes de fuentes de poder"
+                            class="article-img">
+                        <p class="description__article">EVGA SuperNOVA 850 G5, 850W</p>
+                        <p class="precio">$2,000</p>
+                        <a href="#" class="btn-cart" data-price="2000"><i class="fa-solid fa-cart-shopping"
+                                style="color: #fff;"></i> Agregar</a>
+                    </div>
+                    <div class="article-item">
+                        <img src="./assets/Seasonic Focus GX-650, 650W, 80+ Gold.png" alt="Imagenes de fuentes de poder"
+                            class="article-img">
+                        <p class="description__article">Seasonic Focus GX-650, 650W</p>
+                        <p class="precio">$1,300</p>
+                        <a href="#" class="btn-cart" data-price="1300"><i class="fa-solid fa-cart-shopping"
+                                style="color: #fff;"></i> Agregar</a>
+                    </div>
+                    <div class="article-item">
+                        <img src="./assets/Corsair RM750x, 750W, 80+ Gold.png" alt="Imagenes de fuentes de poder"
+                            class="article-img">
+                        <p class="description__article">Corsair RM750x, 750W</p>
+                        <p class="precio">$1500</p>
+                        <a href="#" class="btn-cart"><i class="fa-solid fa-cart-shopping" style="color: #fff;"></i>
+                            Agregar</a>
+                    </div>
+                </div>
+
+                <h2 class="title-article">Refrigeración</h2>
+
+                <div class="article-container">
+                    <div class="article-item">
+                        <img src="./assets/Noctua NH-D15.png" alt="Imagenes de refrigeracion" class="article-img">
+                        <p class="description__article">Noctua NH-D156 UltraPro MAX XX12</p>
+                        <p class="precio">$900</p>
+                        <a href="#" class="btn-cart"><i class="fa-solid fa-cart-shopping" style="color: #fff;"></i>
+                            Agregar</a>
+                    </div>
+                    <div class="article-item">
+                        <img src="./assets/Noctua_NH-D15-Liquida.png" alt="Imagenes de refrigeracion"
+                            class="article-img">
+                        <p class="description__article">Noctua_NH-D15-Liquida</p>
+                        <p class="precio">$900</p>
+                        <a href="#" class="btn-cart"><i class="fa-solid fa-cart-shopping" style="color: #fff;"></i>
+                            Agregar</a>
+                    </div>
+                    <div class="article-item">
+                        <img src="./assets/Cooler Master Hyper 212 Black Edition.png" alt="Imagenes de refrigeracion"
+                            class="article-img">
+                        <p class="description__article">Cooler Master Black Edition</p>
+                        <p class="precio">$900</p>
+                        <a href="#" class="btn-cart"><i class="fa-solid fa-cart-shopping" style="color: #fff;"></i>
+                            Agregar</a>
+                    </div>
+                </div>
+
+                <h2 class="title-article">Gabinetes</h2>
+
+                <div class="article-container">
+                    <div class="article-item">
+                        <img src="./assets/Gabinete NZXT H9 Flow.png" alt="Imagenes de gabinetes" class="article-img">
+                        <p class="description__article">Gabinete NZXT H9 Flow</p>
+                        <p class="precio">$900</p>
+                        <a href="#" class="btn-cart"><i class="fa-solid fa-cart-shopping" style="color: #fff;"></i>
+                            Agregar</a>
+                    </div>
+                    <div class="article-item">
+                        <img src="./assets/Fractal Design Meshify C.png" alt="Imagenes de gabinetes"
+                            class="article-img">
+                        <p class="description__article">Fractal Design Meshify C</p>
+                        <p class="precio">$900</p>
+                        <a href="#" class="btn-cart"><i class="fa-solid fa-cart-shopping" style="color: #fff;"></i>
+                            Agregar</a>
+                    </div>
+                    <div class="article-item">
+                        <img src="./assets/Phanteks Eclipse P400A.png" alt="Imagenes de gabinetes" class="article-img">
+                        <p class="description__article">Phanteks Eclipse P400A</p>
+                        <p class="precio">$900</p>
+                        <a href="#" class="btn-cart"><i class="fa-solid fa-cart-shopping" style="color: #fff;"></i>
+                            Agregar</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="cart__shoping" id="cart">
+            <div class="cart">
+                <h2 class="title-cart"><i class="fa-solid fa-cart-shopping" style="color: #fff;"></i> Carrito de
+                    Compra</h2>
+                <div class="cart-items" id="cart-items"></div>
+                <div class="container-products">
+                    <!--Agregando los productos dinamicamente-->
+                </div>
+                <p class="total">Total: <span id="total"></span></p>
+
+                <div class="btn-buy">Comprar</div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Interactividad con css -->
+    <script src="js/carrito.js"></script>
+</body>
+
+</html>
