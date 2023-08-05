@@ -98,6 +98,9 @@ body {
    font-size: .8rem;
    color: var(--background);
   }
+
+
+  
   .precio { 
     color:var(--background);
     font-weight: 600;
